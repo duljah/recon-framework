@@ -1,0 +1,70 @@
+# ========================================
+#  Recon Framework — .gitignore
+# ========================================
+
+# Scan results — NEVER upload!
+recon_*/
+*_recon_*/
+*.log
+scan.log
+recon.log
+
+# Result directories
+01_passive/
+02_subs/
+03_live/
+04_fingerprint/
+05_dns/
+06_ports/
+07_content/
+08_urls/
+09_vulns/
+10_js/
+11_report/
+
+# Result files
+*.jsonl
+ffuf_*.json
+nuclei_*.txt
+live_hosts.txt
+live_urls.txt
+all_subs.txt
+all_urls.txt
+paths.txt
+subdomains.txt
+technologies.txt
+waf.txt
+dns_records.txt
+hosts_detailed.jsonl
+
+# Secrets
+*.key
+*.pem
+.env
+.env.*
+secrets.txt
+api_keys.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+
+# Reports
+report.html
+*.pdf
+
+# Backups
+*.bak
+*.bak2
+*.old
